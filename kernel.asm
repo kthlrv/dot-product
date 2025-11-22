@@ -1,7 +1,7 @@
 section .text
-global dotProduct
+global dotProductASM
 
-dotProduct:
+dotProductASM:
     push rbp
     mov rbp, rsp
     sub rsp, 32
