@@ -17,8 +17,23 @@ Write the kernel in (1) C program and (2) an x86-64 assembly language. The kerne
 
 **Output**: Store the result in memory location sdot. Display the result for all versions of the kernel (i.e., C and x86-64).
 
-## How to Run
+## Usage
 
+### Prerequisites
+
+* NASM assembler
+* C compiler (GCC or Visual Studio)
+
+```bash
+# Clone repository
+git clone https://github.com/kthlrv/dot-product.git
+
+# Run compile script
+build.bat
+
+# Or, open in Visual Studio
+src/dot_product.sln
+```
 
 ## Program Outputs
 
