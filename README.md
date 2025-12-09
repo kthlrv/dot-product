@@ -2,11 +2,6 @@
 
 Developed in partial fulfillment of the requirements for LBYARCH (Computer Organization and Architecture Laboratory) during Year 3, Term 1 of the Academic Year 2025-2026 at De La Salle University.
 
-## Members
-
-* NARVAJA, KATE ASHLEY ATACADOR
-* PINEDA, MARK GABRIEL ALIPIO
-
 ## Project Specifications
 
 Write the kernel in (1) C program and (2) an x86-64 assembly language. The kernel is to perform a dot product between vector A and vector B and place the result in _sdot_.
@@ -34,10 +29,6 @@ build.bat
 # Or, open in Visual Studio
 src/dot_product.sln
 ```
-
-## Video Demo
-
-You can view the demo of the project here: [https://youtu.be/6fDJzaKhPdw](https://youtu.be/6fDJzaKhPdw)
 
 ## Program Outputs
 
@@ -82,3 +73,12 @@ This metric quantifies the execution time improvement of the ASM kernel relative
 This performance analysis compares the execution of a dot product kernel implemented in both C and x86-64 assembly across varying vector sizes and compiler optimization levels. In **debug mode**, where compiler optimizations are minimal, the assembly kernel shows a substantial and consistent performance advantage. For a vector size of 2^20, the C kernel averages 0.026300 seconds while the assembly kernel completes in just 0.003100 seconds, which is an 88% improvement. This trend continues with larger data sets; at 2^24 elements, the assembly kernel's time of 0.046600 seconds is 88% faster than the C kernel's 0.382600 seconds, and at 2^28 elements, the assembly kernel maintains a strong lead, finishing in 1.925 seconds against the C kernel's 7.125 seconds, being a 73% improvement.
 
 However, the performance shifts notably in **release mode**, where the compiler applies aggressive optimizations to the C code. For the smallest vector size of 2^20, the situation reverses, with the C kernel now finishing in 0.003500 seconds, outperforming the assembly kernel's 0.004450 seconds by 27%. This suggests that for smaller workloads, the overhead of the assembly function call may outweigh its computational benefits when compared to a potentially inlined and highly optimized C loop. As the vector size increases to 2^24, the assembly kernel regains a slight edge, finishing in 0.046450 seconds compared to the C kernel's 0.050050 seconds, a 7% improvement.
+
+## Video Demo
+
+You can view the demo of the project here: [https://youtu.be/6fDJzaKhPdw](https://youtu.be/6fDJzaKhPd)
+
+## Authors
+
+* NARVAJA, KATE ASHLEY ATACADOR
+* PINEDA, MARK GABRIEL ALIPIO
